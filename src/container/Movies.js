@@ -67,6 +67,7 @@ handleDelete(e){
 
 }
 	componentDidMount(){
+		document.title = "vaibhav app";
 		this.setState({isloading: true})
 		axios.get(`http://localhost:3001/api/v1/movies.json`)
 		.then(res => {
